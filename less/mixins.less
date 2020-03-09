@@ -1,1 +1,30 @@
 // Mixins Here
+
+.flex-mixin(){
+    display: flex;
+    justify-content: center;
+}
+.disp-none-mixin(){
+    @media @mobile-view{
+        display: none;
+    }
+}
+
+
+.button-mixin(@background-c, @font-c){
+background: @background-c;
+color: @font-c;
+font-size: 2rem;
+cursor: pointer;
+width: 30%;
+text-align: center;
+
+&:hover{
+    background:@font-c;
+    color: @background-c;
+    border: 1px solid @background-c;
+}
+}
+
+
+
